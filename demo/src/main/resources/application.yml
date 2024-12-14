@@ -1,0 +1,17 @@
+server:
+  port: 9000
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: false
+        default_schema: ELH
+    open-in-view: false
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@10.0.20.31:8081/xe
+    username: elh
+    password: 123
